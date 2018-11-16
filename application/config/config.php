@@ -2,7 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 date_default_timezone_set('America/Lima');
-$config['base_url'] = 'http://localhost/controltesis/';
+//$config['base_url'] = 'http://localhost/controltesis/';
+$config['base_url'] = 'https://controltesis-2018-2.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
