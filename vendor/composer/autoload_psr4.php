@@ -6,7 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'voku\\' => array($vendorDir . '/voku/portable-utf8/src/voku'),
-    'Symfony\\Polyfill\\' => array($vendorDir . '/symfony/polyfill/src'),
-    'Symfony\\Component\\Intl\\' => array($vendorDir . '/symfony/intl'),
 );
