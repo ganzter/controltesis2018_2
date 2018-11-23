@@ -18,6 +18,8 @@ Date: 2018-11-16 05:44:40
 -- ----------------------------
 -- Table structure for "public"."asesor"
 -- ----------------------------
+CREATE SEQUENCE asesor_seq MINVALUE 1 MAXVALUE 999999 INCREMENT BY 1;
+
 DROP TABLE "public"."asesor";
 CREATE TABLE "public"."asesor" (
 "id" int4 DEFAULT nextval('asesor_seq'::regclass) NOT NULL,

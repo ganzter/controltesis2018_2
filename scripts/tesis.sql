@@ -18,6 +18,8 @@ Date: 2018-11-16 05:44:32
 -- ----------------------------
 -- Table structure for "public"."tesis"
 -- ----------------------------
+CREATE SEQUENCE tesis_seq MINVALUE 1 MAXVALUE 999999 INCREMENT BY 1;
+
 DROP TABLE "public"."tesis";
 CREATE TABLE "public"."tesis" (
 "id" int4 DEFAULT nextval('tesis_seq'::regclass) NOT NULL,
