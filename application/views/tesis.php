@@ -207,16 +207,17 @@
 								<table class="table table-hover table-lista">
 									<thead>
 										<tr>
+											<th>ID</th>
 											<th class="text-center" style="width: 10%;">ACCIONES</th>
+											<th>ESTADO</th>
 											<th>Nº DE INSCRIPCIÓN</th>
 											<th>F. DE INSCRIPCIÓN</th>
 											<th>TÍTULO</th>
 											<th>ALUMNO</th>
 											<th>ASESOR</th>
 											<th>Nº DE EXPEDITO</th>
-											<th>SUSTENCIÓN</th>
+											<th>F. DE SUSTENTACIÓN</th>
 											<th>NOTA</th>
-											<th>ESTADO</th>
 										</tr>
 									</thead>
 									<tbody>

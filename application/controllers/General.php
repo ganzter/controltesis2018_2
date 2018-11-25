@@ -179,7 +179,7 @@ class General extends CI_Controller {
 					$fecha_hora_sustentacion = ($item['fecha_hora_sustentacion'] === NULL ? '-' : date("d-m-Y g:i A",strtotime($item['fecha_hora_sustentacion'])));
 
 					switch ($estado) {
-						case '1':
+						/*case '1':
 							$estadolabel = 'success';
 							$estadotexto = 'Creado';
 							$opciones = "	<a class='btn btn-xs btn-info completartesis' data-id='$id' data-table='tesis' data-toggle='tooltip' data-placement='top' title='Asignación de asesor y RAIS'>
@@ -187,6 +187,13 @@ class General extends CI_Controller {
 													</a>
 													<a class='btn btn-xs btn-danger cambiaestadotesis' data-id='$id' data-table='$table' data-estado='5' data-toggle='tooltip' data-placement='top' title='Eliminar'>
 														<i class='fa fa-times' ></i>
+													</a>";
+							break;*/
+						case '1':
+							$estadolabel = 'success';
+							$estadotexto = 'Creado';
+							$opciones = "	<a class='btn btn-xs btn-info completartesis' data-id='$id' data-table='tesis' data-toggle='tooltip' data-placement='top' title='Asignación de asesor y RAIS'>
+														<i class='fa fa-edit' ></i>
 													</a>";
 							break;
 						case '2':
@@ -297,7 +304,7 @@ class General extends CI_Controller {
 					$fecha_hora_sustentacion = ($item['fecha_hora_sustentacion'] === NULL ? '-' : date("d-m-Y g:i A",strtotime($item['fecha_hora_sustentacion'])));
 
 					switch ($estado) {
-						case '1':
+						/*case '1':
 							$estadolabel = 'success';
 							$estadotexto = 'Creado';
 							$opciones = "	<a class='btn btn-xs btn-info completartesis' data-id='$id' data-table='tesis' data-toggle='tooltip' data-placement='top' title='Asignación de asesor y RAIS'>
@@ -305,6 +312,13 @@ class General extends CI_Controller {
 													</a>
 													<a class='btn btn-xs btn-danger cambiaestadotesis' data-id='$id' data-table='$table' data-estado='5' data-toggle='tooltip' data-placement='top' title='Eliminar'>
 														<i class='fa fa-times' ></i>
+													</a>";
+							break;*/
+						case '1':
+							$estadolabel = 'success';
+							$estadotexto = 'Creado';
+							$opciones = "	<a class='btn btn-xs btn-info completartesis' data-id='$id' data-table='tesis' data-toggle='tooltip' data-placement='top' title='Asignación de asesor y RAIS'>
+														<i class='fa fa-edit' ></i>
 													</a>";
 							break;
 						case '2':
@@ -730,6 +744,7 @@ class General extends CI_Controller {
 					break;
 			}
 		}
+		log_message('debug',$this->db->last_query());
 		echo json_encode($response);
 	}
 
